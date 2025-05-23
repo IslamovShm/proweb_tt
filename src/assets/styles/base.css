@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+    --body: #F9FAF5;
     --black: #000;
     --black-2: #353535;
     --beige: #EEECDC;
     --gray: #CCCCCC;
     --gray-2: #EDEDED;
+    --gray-3: #606060;
+    --gray-4: #616161;
+    --white: #FFFFFF;
 }
 
 * {
@@ -19,6 +23,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  background-color: var(--body);
 }
 
 #app {
@@ -27,7 +32,7 @@ body {
 }
 
 main {
-  width: 100%;
+  overflow: hidden;
 }
 
 a {
@@ -56,4 +61,25 @@ ul {
 
 .subtitle {
   font-size: 24px;
+}
+
+.courses-wrapper {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.courses-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.courses-wrapper {
+  cursor: grab;
+  user-select: none;
+}
+.courses-wrapper.dragging {
+  cursor: grabbing;
 }

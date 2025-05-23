@@ -13,11 +13,12 @@ import Navbar from '@/components/Navbar.vue'
 </template>
 
 <style scoped>
-
 .header {
+  padding: 20px 0;
   max-width: 400px;
   width: 100%;
-  padding: 20px 0;
+  background-color: var(--body);
+  flex: 0 0 400px;
 }
 
 .header-content {
@@ -30,4 +31,9 @@ import Navbar from '@/components/Navbar.vue'
   margin-top: 50px;
 }
 
+@media (max-width: 1200px) {
+  .header {
+    flex: 0 0 100px;
+  }
+}
 </style>

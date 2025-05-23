@@ -39,5 +39,6 @@ function handleClick() {
   background-color: var(--gray-2);
   min-width: fit-content;
   cursor: pointer;
+  white-space: nowrap;
 }
 </style>

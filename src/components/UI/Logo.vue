@@ -1,7 +1,5 @@
-<script>
-export default {
-  name: 'Logo',
-}
+<script setup>
+defineOptions({ name: 'Logo' })
 </script>
 
 <template>
@@ -14,5 +12,12 @@ export default {
   font-weight: 700;
   font-size: 30px;
   color: var(--black-2);
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    font-size: 20px;
+    color: var(--black-2);
+  }
 }
 </style>

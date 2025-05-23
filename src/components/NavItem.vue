@@ -34,4 +34,19 @@ const props = defineProps({
   background-color: var(--beige);
 }
 
+@media (max-width: 1200px) {
+  .nav-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .nav-item a img {
+    width: 25px;
+  }
+  .nav-item a span {
+    display: none;
+  }
+}
+
 </style>
