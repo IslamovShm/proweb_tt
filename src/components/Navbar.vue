@@ -5,18 +5,22 @@ import person from '@/assets/person.svg'
 
 const navItems = [
   { label: 'Запуски', icon: flag, route: '/' },
-  { label: 'О нас', icon: person, route: '/about' },
+  { label: 'Обо мне', icon: person, route: '/about' },
 ]
 </script>
 
 <template>
-  <ul>
-    <NavItem
-      v-for="item in navItems"
-      :key="item.label"
-      :label="item.label"
-      :icon="item.icon"
-      :route="item.route"
-    />
-  </ul>
+  <nav>
+    <ul>
+      <NavItem
+        v-for="item in navItems"
+        :key="item.label"
+        :label="item.label"
+        :icon="item.icon"
+        :route="item.route"
+      />
+    </ul>
+  </nav>
 </template>
+
+<style scoped></style>

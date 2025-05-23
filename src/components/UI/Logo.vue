@@ -13,6 +13,6 @@ export default {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 30px;
-  color: #353535;
+  color: var(--black-2);
 }
 </style>
